@@ -1,0 +1,32 @@
+html {
+        color: #E2F1E7
+    }
+        #songInfo {
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+        }
+    
+        img {
+            max-width: 200px;
+            display: block;
+            margin-top: 10px;
+            
+        }
+    
+.navbar-brand {
+  position: relative; /* Or absolute/fixed */
+   z-index: 1000;
+}
+
+.card {
+  position: relative; /* Or absolute/fixed */
+    z-index: 1;
+}
+
+    
+    .card-body {
+        background-image: linear-gradient(to bottom right, #243642, #387478);
+        
+    }
+    
