@@ -1,0 +1,261 @@
+
+        // Array of song objects sorted alphabetically by song name
+  const songs = [
+  {
+    name: "A Perfect Circle",
+    album: "Mer de Noms",
+    song: "3 Libras",
+    guitarTuning: "Standard (E A D G B e)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134444~2.png"
+  },
+  {
+    name: "Avenged Sevenfold",
+    album: "City of Evil",
+    song: "Bat Country",
+    guitarTuning: "Drop D (D A D G B e)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250325-222738.png"
+  },
+  {
+    name: "Alter Bridge",
+    album: "Blackbird",
+    song: "Blackbird",
+    guitarTuning: "Drop D (D A D G B e)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134606~2.png"
+  },
+     {
+        name: "Ben Howard",
+        album: "Every Kingdom",
+        song: "Bones",
+        guitarTuning: "Open D (D A D F# A D)",
+        image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134449~2.png"
+    },
+  {
+    name: "Santana",
+    album: "Abraxas",
+    song: "Black Magic Woman",
+    guitarTuning: "Standard (E A D G B e)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134622~2.png"
+  },
+  {
+    name: "Papa Roach",
+    album: "Infest",
+    song: "Blood Brothers",
+    guitarTuning: "Drop D (D A D G B e)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250325-222606.png"
+  },
+  {
+    name: "Blue Öyster Cult",
+    album: "Fire of Unknown Origin",
+    song: "Burn for You",
+    guitarTuning: "Standard (E A D G B e)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134708~2.png"
+  },
+  {
+    name: "System of a Down",
+    album: "Mezmerize",
+    song: "B.Y.O.B.",
+    guitarTuning: "Drop C (C G C F A D)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250325-222413.png"
+  },
+  {
+    name: "Blue Öyster Cult",
+    album: "Agents of Fortune",
+    song: "Don't Fear the Reaper",
+    guitarTuning: "Standard (E A D G B e)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134647~2.png"
+  },
+  {
+    name: "Coheed and Cambria",
+    album: "Vaxis – Act I: The Unheavenly Creatures",
+    song: "Dark Sentencer",
+    guitarTuning: "Drop D (D A D G B e)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134719~2.png"
+  },
+    {
+        name: "Coheed and Cambria",
+        album: "Good Apollo, I'm Burning Star IV, Volume One",
+        song: "Welcome Home",
+        guitarTuning: "Drop D (D A D G B e)",
+        image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134612~2.png"
+    },
+  {
+    name: "Eyes Set to Kill",
+    album: "Reach",
+    song: "Reach",
+    guitarTuning: "Drop C (C G C F A D)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134730~4.png"
+  },
+  {
+    name: "Foo Fighters",
+    album: "The Colour and the Shape",
+    song: "Monkey Wrench",
+    guitarTuning: "Drop D (D A D G B e)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250325-222904~2.png"
+  },
+  {
+    name: "Coheed and Cambria",
+    album: "In Keeping Secrets of Silent Earth: 3",
+    song: "In Keeping Secrets of Silent Earth: 3",
+    guitarTuning: "Drop D (D A D G B e)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250325-224532.png"
+  },
+    {
+        name: "Coheed and Cambria",
+        album: "Good Apollo, I'm Burning Star IV, Volume One",
+        song: "Suffering",
+        guitarTuning: "Drop D (D A D G B e)",
+        image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134612~2.png"
+    },
+  {
+    name: "Iron Maiden",
+    album: "Piece of Mind",
+    song: "The Trooper",
+    guitarTuning: "Standard (E A D G B e)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134545~2.png"
+  },
+  {
+    name: "Kansas",
+    album: "Leftoverture",
+    song: "Carry On Wayward Son",
+    guitarTuning: "Standard (E A D G B e)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250325-222223.png"
+  },
+  {
+    name: "Lamb of God",
+    album: "Ashes of the Wake",
+    song: "Laid to Rest",
+    guitarTuning: "Drop D (D A D G B e)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250325-221838.png"
+  },
+  {
+    name: "My Chemical Romance",
+    album: "Three Cheers for Sweet Revenge",
+    song: "Thank You for the Venom",
+    guitarTuning: "Drop D (D A D G B e)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134419~2.png"
+  },
+  {
+    name: "Hozier",
+    album: "Hozier",
+    song: "Cherry Wine",
+    guitarTuning: "Open C (C G C G C E)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134407~2.png"
+  },
+  {
+    name: "Jimi Hendrix",
+    album: "Are You Experienced",
+    song: "Red House",
+    guitarTuning: "Half-Step Down (Eb Ab Db Gb Bb Eb)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134631~2.png"
+  },
+  {
+    name: "John Mayer",
+    album: "Where the Light Is",
+    song: "Neon",
+    guitarTuning: "C Standard (C F Bb Eb G C)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250325-221601~2.png"
+  },
+  {
+    name: "John Mayer",
+    album: "Continuum",
+    song: "Stop This Train",
+    guitarTuning: "Standard (E A D G B e)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134403~3.png"
+  },
+    {
+        name: "John Mayer",
+        album: "Room for Squares",
+        song: "Neon",
+        guitarTuning: "Drop C (C G C G C E)",
+        image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134354~2.png"
+    },
+    {
+    name: "Stone Sour",
+    album: "House of Gold & Bones – Part 1",
+    song: "Tired",
+    guitarTuning: "Drop Db (Db Ab Db Bb Eb )",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250325-223625.png"
+  },
+    {
+    name: "Stone Sour",
+    album: "Hydrograd",
+    song: "Mercy",
+    guitarTuning: "Half-Step Down (Eb Ab Db Bb Eb )",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250325-223110.png"
+  },
+  {
+    name: "Paramore",
+    album: "The Final RIOT!",
+    song: "Misguided Ghosts",
+    guitarTuning: "Open C6 (C A C G C E)",
+    image: "/storage/emulated/0/Musician assistant /albums/Screenshot_20250223-134344~2.png"
+  },
+  {
+    name: "System of a Down",
+    album: "Toxicity",
+    song: "Chop Suey!",
+    guitarTuning: "Drop C (C G C F A D)",
+    image: "https://upload.wikimedia.org/wikipedia/en/6/64/SystemofaDownToxicityalbumcover.jpg"
+  },
+  {
+    name: "Guns N' Roses",
+    album: "Appetite for Destruction",
+    song: "Sweet Child o' Mine",
+    guitarTuning: "Half-Step Down (Eb Ab Db Gb Bb Eb)",
+    image: "https://upload.wikimedia.org/wikipedia/en/6/60/GunsnRosesAppetiteforDestructionalbumcover.jpg"
+  }
+];
+
+
+
+        // Select the button and info container
+        const button = document.getElementById("randomSongButton");
+        const songInfo = document.getElementById("songInfo");
+   
+//Reset button to clear innerHTML
+       const reset= 
+document.getElementById("reset");
+//Log button to log songInfo
+const log = document.getElementById("logBtn");
+
+//OnClick function to reset innerHTML
+function resetBtn(){
+    songInfo.innerHTML ="";
+    songInfoArray.pop()
+};
+        // Event listener for button click
+        button.addEventListener("click", function() {
+            // Get a random song object
+            const randomSong = songs[Math.floor(Math.random() * songs.length)];
+
+            
+            
+            // Display song details
+            songInfo.innerHTML = `
+                <strong>Artist:</strong> ${randomSong.name} <br>
+                <strong>Album:</strong> ${randomSong.album} <br>
+                <strong>Song:</strong> ${randomSong.song} <br>
+                <strong>Guitar Tuning:</strong> ${randomSong.guitarTuning} <br>
+                <img src="${randomSong.image}" alt="${randomSong.song}">
+            `;
+            //Push random song 
+           songInfoArray.push(songInfo.innerHTML);
+        });
+ 
+const songInfoArray = [ ];
+  
+ function logBtn(){
+     
+     songLog.innerHTML  =  songInfoArray.join("<hr> ");
+  
+     
+ };
+
+function resetLogBtn(){
+    songLog.innerHTML ="";
+    songInfoArray.length = 0;
+};
+
+
+
+
